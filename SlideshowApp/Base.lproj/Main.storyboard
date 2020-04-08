@@ -65,8 +65,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="nextImage" destination="M5G-8b-2eQ" id="tmP-U5-Ygi"/>
                         <outlet property="photoImageView" destination="7HY-wD-kPv" id="ULG-ch-gx9"/>
                         <outlet property="playOrStopLabel" destination="fCj-Wa-ack" id="Uww-gz-gRI"/>
+                        <outlet property="previousImage" destination="hiY-XH-AcQ" id="qtI-hb-Ewo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

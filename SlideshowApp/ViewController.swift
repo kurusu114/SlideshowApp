@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
 
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var previousImage: UIButton!
+    @IBOutlet weak var nextImage: UIButton!
     @IBOutlet weak var playOrStopLabel: UIButton!
     
     override func viewDidLoad() {
@@ -28,6 +30,8 @@ class ViewController: UIViewController {
             self.timer.invalidate()
             self.timer = nil
             playOrStopLabel.setTitle("再生", for: .normal)
+            previousImage.isEnabled = true
+            nextImage.isEnabled = true
         }
         let enlargedVIewController:enlargedVIewController = segue.destination as! enlargedVIewController
         var currentImageIndex = 0
@@ -67,12 +71,15 @@ class ViewController: UIViewController {
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             playOrStopLabel.setTitle("停止", for: .normal)
+            previousImage.isEnabled = false
+            nextImage.isEnabled = false
         }
         else {
             self.timer.invalidate()
             self.timer = nil
             playOrStopLabel.setTitle("再生", for: .normal)
-
+            previousImage.isEnabled = true
+            nextImage.isEnabled = true
         }
     }
     
