@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let imageArray = ["pic1", "pic2", "pic3"]
+    let imageArray = ["pic1.jpg", "pic2.jpg", "pic3.jpg"]
     var imageIndexNumber = 0
     var timer: Timer!
     

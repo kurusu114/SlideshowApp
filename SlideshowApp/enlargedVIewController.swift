@@ -11,7 +11,7 @@ import UIKit
 class enlargedVIewController: UIViewController {
     
     @IBOutlet weak var enlargedImageView: UIImageView!
-    let imageArray = ["pic1", "pic2", "pic3"]
+    let imageArray = ["pic1.jpg", "pic2.jpg", "pic3.jpg"]
     var resultImageIndex = 0
     
     override func viewDidLoad() {
